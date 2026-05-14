@@ -35,12 +35,10 @@ public class Experiment {
 
             Graph g = new Graph();
 
-            // create vertices
             for(int i = 0; i < size; i++) {
                 g.addVertex(new Vertex(i));
             }
 
-            // connect vertices
             for(int i = 0; i < size - 1; i++) {
                 g.addEdge(i, i + 1);
             }

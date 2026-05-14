@@ -4,12 +4,10 @@ public class Main {
 
         Graph graph = new Graph();
 
-        // create vertices
         for(int i = 0; i < 10; i++) {
             graph.addVertex(new Vertex(i));
         }
 
-        // create edges
         graph.addEdge(0, 1);
         graph.addEdge(0, 2);
         graph.addEdge(1, 3);

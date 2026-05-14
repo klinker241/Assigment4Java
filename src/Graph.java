@@ -8,19 +8,16 @@ public class Graph {
         adjList = new HashMap<>();
     }
 
-    // add vertex
     public void addVertex(Vertex v) {
         adjList.putIfAbsent(v.getId(), new ArrayList<>());
     }
 
-    // add edge (undirected graph)
     public void addEdge(int from, int to) {
 
         adjList.get(from).add(to);
         adjList.get(to).add(from);
     }
 
-    // print graph
     public void printGraph() {
 
         for(int vertex : adjList.keySet()) {
@@ -35,7 +32,6 @@ public class Graph {
         }
     }
 
-    // BFS traversal
     public void bfs(int start) {
 
         Set<Integer> visited = new HashSet<>();
@@ -62,7 +58,6 @@ public class Graph {
         System.out.println();
     }
 
-    // DFS traversal
     public void dfs(int start) {
 
         Set<Integer> visited = new HashSet<>();

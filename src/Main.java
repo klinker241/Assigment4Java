@@ -18,7 +18,6 @@ public class Main {
         graph.addEdge(5, 8);
         graph.addEdge(6, 9);
 
-        // example edge object
         Edge edgeExample = new Edge(0, 1);
 
         System.out.println("Example Edge: " + edgeExample);
